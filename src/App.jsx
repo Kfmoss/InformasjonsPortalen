@@ -10,6 +10,7 @@ import produksjonIcon from './assets/icon_produksjon_historiefortelling.png'
 import teknologiIcon from './assets/icon_teknologiforstaelse.png'
 import konseptIcon from './assets/icon_konseptutvikling_programmering.png'
 import yrkesfagligIcon from './assets/icon_yrkesfaglig_fordypning.png'
+import logo1 from './assets/Logo_IM.jpg'
 
 function App() {
   const [currentMonth, setCurrentMonth] = useState(0) // 0 = August, 1 = September, etc.
@@ -242,7 +243,10 @@ function App() {
       <header className="bg-white shadow-sm sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
-            <h1 className="text-2xl font-bold text-blue-600">InformasjonsPortalen</h1>
+            <div className="flex items-center gap-4">
+              <img src={logo1} alt="Åssiden VGS Logo" className="h-16 w-auto" />
+              <h1 className="text-2xl font-bold text-blue-600">InformasjonsPortalen VG1</h1>
+            </div>
             <nav className="hidden md:flex space-x-8">
               <a href="#kalender" className="text-gray-700 hover:text-blue-600 transition-colors">Kalender</a>
               <a href="#fag" className="text-gray-700 hover:text-blue-600 transition-colors">Fag</a>
@@ -258,10 +262,10 @@ function App() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                Velkommen til InformasjonsPortalen
+                Velkommen til InformasjonsPortalen VG1 IM
               </h2>
               <p className="text-xl mb-8 text-blue-100">
-                Din guide til VG1 IKT og Medier. Her finner du alt du trenger å vite om prosjekter, fag og kontaktinformasjon.
+                Her finner du alt du trenger å vite om prosjekter, foreldremøter, kontaktinformasjon og mye mer.
               </p>
               <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white">
                 Utforsk prosjektene
