@@ -244,7 +244,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center gap-4">
-              <img src={logo1} alt="Åssiden VGS Logo" className="h-16 w-auto" />
+              {/* <img src={logo1} alt="Åssiden VGS Logo" className="h-16 w-auto" /> */}
               <h1 className="text-2xl font-bold text-blue-600">InformasjonsPortalen VG1</h1>
             </div>
             <nav className="hidden md:flex space-x-8">
