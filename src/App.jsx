@@ -242,84 +242,94 @@ function App() {
       {/* Header */}
       <header className="bg-white shadow-sm sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center py-4">
-            <div className="flex items-center gap-4">
+          <div className="flex justify-between items-center py-2 sm:py-4">
+            <div className="flex items-center gap-2 sm:gap-4">
               {/* <img src={logo1} alt="Åssiden VGS Logo" className="h-16 w-auto" /> */}
-              <h1 className="text-2xl font-bold text-blue-600">InformasjonsPortalen VG1</h1>
+              <h1 className="text-lg sm:text-xl lg:text-2xl font-bold text-blue-600">InformasjonsPortalen VG1</h1>
             </div>
             <nav className="hidden md:flex space-x-8">
               <a href="#kalender" className="text-gray-700 hover:text-blue-600 transition-colors">Kalender</a>
               <a href="#fag" className="text-gray-700 hover:text-blue-600 transition-colors">Fag</a>
               <a href="#kontakt" className="text-gray-700 hover:text-blue-600 transition-colors">Kontakt</a>
             </nav>
+            {/* Mobile menu button */}
+            <div className="md:hidden">
+              <button className="text-gray-700 hover:text-blue-600">
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
       </header>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-600 to-blue-800 text-white py-16">
+      <section className="bg-gradient-to-br from-blue-600 to-blue-800 text-white py-8 sm:py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-center">
+            <div className="text-center lg:text-left">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6">
                 Velkommen til InformasjonsPortalen VG1 IM
               </h2>
-              <p className="text-xl mb-8 text-blue-100">
+              <p className="text-base sm:text-lg lg:text-xl mb-6 sm:mb-8 text-blue-100">
                 Her finner du alt du trenger å vite om prosjekter, foreldremøter, kontaktinformasjon og mye mer.
               </p>
-              <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white">
+              <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white w-full sm:w-auto">
                 Utforsk prosjektene
               </Button>
             </div>
-            <div className="flex justify-center">
-              <img src={heroImage} alt="Studenter som jobber med teknologi" className="max-w-full h-auto rounded-lg shadow-lg" />
+            <div className="flex justify-center order-first lg:order-last">
+              <img src={heroImage} alt="Studenter som jobber med teknologi" className="w-full max-w-sm sm:max-w-md lg:max-w-full h-auto rounded-lg shadow-lg" />
             </div>
           </div>
         </div>
       </section>
 
       {/* Calendar Section */}
-      <section id="kalender" className="py-16">
+      <section id="kalender" className="py-8 sm:py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Prosjektkalender</h2>
-            <p className="text-lg text-gray-600">Oversikt over alle prosjekter, arbeidsmetoder og vurderingsformer</p>
+          <div className="text-center mb-8 sm:mb-12">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2 sm:mb-4">Prosjektkalender</h2>
+            <p className="text-sm sm:text-base lg:text-lg text-gray-600">Oversikt over alle prosjekter, arbeidsmetoder og vurderingsformer</p>
           </div>
 
-          <div className="bg-white rounded-lg shadow-lg p-6">
-            <div className="flex items-center justify-between mb-6">
-              <Button variant="outline" onClick={prevMonth} className="flex items-center gap-2">
-                <ChevronLeft className="w-4 h-4" />
-                Forrige
+          <div className="bg-white rounded-lg shadow-lg p-3 sm:p-4 lg:p-6">
+            <div className="flex items-center justify-between mb-4 sm:mb-6">
+              <Button variant="outline" onClick={prevMonth} className="flex items-center gap-1 sm:gap-2 text-xs sm:text-sm px-2 sm:px-4">
+                <ChevronLeft className="w-3 h-3 sm:w-4 sm:h-4" />
+                <span className="hidden sm:inline">Forrige</span>
+                <span className="sm:hidden">←</span>
               </Button>
-              <h3 className="text-2xl font-semibold text-gray-900">{months[currentMonth].name}</h3>
-              <Button variant="outline" onClick={nextMonth} className="flex items-center gap-2">
-                Neste
-                <ChevronRight className="w-4 h-4" />
+              <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-gray-900 text-center">{months[currentMonth].name}</h3>
+              <Button variant="outline" onClick={nextMonth} className="flex items-center gap-1 sm:gap-2 text-xs sm:text-sm px-2 sm:px-4">
+                <span className="hidden sm:inline">Neste</span>
+                <span className="sm:hidden">→</span>
+                <ChevronRight className="w-3 h-3 sm:w-4 sm:h-4" />
               </Button>
             </div>
 
-            <div className="space-y-4">
+            <div className="space-y-3 sm:space-y-4">
               {months[currentMonth].projects.map((project, index) => (
                 <Card key={index} className="border-l-4 border-l-blue-500">
-                  <CardHeader>
-                    <div className="flex items-center justify-between">
-                      <CardTitle className="text-lg">{project.title}</CardTitle>
-                      <span className="text-sm font-medium text-blue-600 bg-blue-50 px-3 py-1 rounded-full">
+                  <CardHeader className="pb-2 sm:pb-4">
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                      <CardTitle className="text-base sm:text-lg">{project.title}</CardTitle>
+                      <span className="text-xs sm:text-sm font-medium text-blue-600 bg-blue-50 px-2 sm:px-3 py-1 rounded-full self-start">
                         {project.week}
                       </span>
                     </div>
-                    <CardDescription className="text-gray-600">{project.subject}</CardDescription>
+                    <CardDescription className="text-sm sm:text-base text-gray-600">{project.subject}</CardDescription>
                   </CardHeader>
-                  <CardContent>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <CardContent className="pt-0">
+                    <div className="grid grid-cols-1 gap-2 sm:gap-4">
                       <div className="flex items-center gap-2">
-                        <Users className="w-4 h-4 text-gray-500" />
-                        <span className="text-sm text-gray-700">{project.method}</span>
+                        <Users className="w-4 h-4 text-gray-500 flex-shrink-0" />
+                        <span className="text-xs sm:text-sm text-gray-700">{project.method}</span>
                       </div>
                       <div className="flex items-center gap-2">
-                        <Clock className="w-4 h-4 text-gray-500" />
-                        <span className="text-sm text-gray-700">{project.assessment}</span>
+                        <Clock className="w-4 h-4 text-gray-500 flex-shrink-0" />
+                        <span className="text-xs sm:text-sm text-gray-700">{project.assessment}</span>
                       </div>
                     </div>
                   </CardContent>
@@ -331,32 +341,32 @@ function App() {
       </section>
 
       {/* Subjects Section */}
-      <section id="fag" className="py-16 bg-gray-50">
+      <section id="fag" className="py-8 sm:py-12 lg:py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Fagintroduksjoner</h2>
-            <p className="text-lg text-gray-600">Lær mer om de fire fagene du vil jobbe med på VG1</p>
+          <div className="text-center mb-8 sm:mb-12">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2 sm:mb-4">Fagintroduksjoner</h2>
+            <p className="text-sm sm:text-base lg:text-lg text-gray-600">Lær mer om de fire fagene du vil jobbe med på VG1</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 gap-4 sm:gap-6 lg:gap-8">
             {subjects.map((subject, index) => (
               <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
-                <CardHeader>
-                  <div className="flex items-center gap-4 mb-4">
-                    <img src={subject.icon} alt={subject.title} className="w-12 h-12" />
-                    <CardTitle className="text-xl">{subject.title}</CardTitle>
+                <CardHeader className="pb-3 sm:pb-4">
+                  <div className="flex items-center gap-3 sm:gap-4 mb-3 sm:mb-4">
+                    <img src={subject.icon} alt={subject.title} className="w-10 h-10 sm:w-12 sm:h-12" />
+                    <CardTitle className="text-lg sm:text-xl">{subject.title}</CardTitle>
                   </div>
-                  <CardDescription className="text-gray-600 leading-relaxed">
+                  <CardDescription className="text-sm sm:text-base text-gray-600 leading-relaxed">
                     {subject.description}
                   </CardDescription>
                 </CardHeader>
-                <CardContent>
-                  <h4 className="font-semibold text-gray-900 mb-3">Hovedtemaer:</h4>
-                  <ul className="space-y-2">
+                <CardContent className="pt-0">
+                  <h4 className="font-semibold text-gray-900 mb-2 sm:mb-3 text-sm sm:text-base">Hovedtemaer:</h4>
+                  <ul className="space-y-1 sm:space-y-2">
                     {subject.topics.map((topic, topicIndex) => (
                       <li key={topicIndex} className="flex items-start gap-2">
-                        <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-sm text-gray-700">{topic}</span>
+                        <div className="w-2 h-2 bg-blue-500 rounded-full mt-1.5 sm:mt-2 flex-shrink-0"></div>
+                        <span className="text-xs sm:text-sm text-gray-700">{topic}</span>
                       </li>
                     ))}
                   </ul>
@@ -368,26 +378,26 @@ function App() {
       </section>
 
       {/* Contact Section */}
-      <section id="kontakt" className="py-16">
+      <section id="kontakt" className="py-8 sm:py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Kontaktinformasjon</h2>
-            <p className="text-lg text-gray-600">Ta kontakt med faglærere og administrasjon</p>
+          <div className="text-center mb-8 sm:mb-12">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2 sm:mb-4">Kontaktinformasjon</h2>
+            <p className="text-sm sm:text-base lg:text-lg text-gray-600">Ta kontakt med faglærere og administrasjon</p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 gap-6 sm:gap-8">
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-6">Faglærere og kontaktinformasjon</h3>
-              <div className="space-y-4">
+              <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-4 sm:mb-6">Faglærere og kontaktinformasjon</h3>
+              <div className="space-y-3 sm:space-y-4">
                 {contacts.map((contact, index) => (
                   <Card key={index}>
-                    <CardContent className="p-4">
-                      <div className="flex items-center gap-3">
-                        <Mail className="w-5 h-5 text-blue-500" />
-                        <div>
-                          <h4 className="font-medium text-gray-900">{contact.name}</h4>
-                          <p className="text-sm text-gray-600">{contact.role}</p>
-                          <a href={`mailto:${contact.email}`} className="text-sm text-blue-600 hover:text-blue-800">
+                    <CardContent className="p-3 sm:p-4">
+                      <div className="flex items-start sm:items-center gap-3">
+                        <Mail className="w-4 h-4 sm:w-5 sm:h-5 text-blue-500 mt-1 sm:mt-0 flex-shrink-0" />
+                        <div className="min-w-0 flex-1">
+                          <h4 className="font-medium text-gray-900 text-sm sm:text-base">{contact.name}</h4>
+                          <p className="text-xs sm:text-sm text-gray-600">{contact.role}</p>
+                          <a href={`mailto:${contact.email}`} className="text-xs sm:text-sm text-blue-600 hover:text-blue-800 break-all">
                             {contact.email}
                           </a>
                         </div>
@@ -399,34 +409,25 @@ function App() {
             </div>
 
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-6">Praktisk informasjon</h3>
+              <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-4 sm:mb-6">Praktisk informasjon</h3>
               <Card>
-                <CardContent className="p-6 space-y-4">
-                  <div className="flex items-center gap-3">
-                    <Phone className="w-5 h-5 text-green-500" />
+                <CardContent className="p-4 sm:p-6 space-y-3 sm:space-y-4">
+                  <div className="flex items-start sm:items-center gap-3">
+                    <Phone className="w-4 h-4 sm:w-5 sm:h-5 text-green-500 mt-1 sm:mt-0 flex-shrink-0" />
                     <div>
-                      <h4 className="font-medium text-gray-900">Avdelingsleder</h4>
-                      <p className="text-sm text-gray-600">Kyrre Brekke Haakaas</p>
-                      
-                      <p className="text-sm text-blue-600">kyrreh@bfk.no</p>
+                      <h4 className="font-medium text-gray-900 text-sm sm:text-base">Avdelingsleder</h4>
+                      <p className="text-xs sm:text-sm text-gray-600">Kyrre Brekke Haakaas</p>
+                      <p className="text-xs sm:text-sm text-blue-600 break-all">kyrreh@bfk.no</p>
                     </div>
                   </div>
                   
-                  <div className="flex items-center gap-3">
-                    <MapPin className="w-5 h-5 text-red-500" />
+                  <div className="flex items-start sm:items-center gap-3">
+                    <MapPin className="w-4 h-4 sm:w-5 sm:h-5 text-red-500 mt-1 sm:mt-0 flex-shrink-0" />
                     <div>
-                      <h4 className="font-medium text-gray-900">Kontoret</h4>
-                      <p className="text-sm text-gray-600">Rom 201, 2. etasje</p>
+                      <h4 className="font-medium text-gray-900 text-sm sm:text-base">Kontoret</h4>
+                      <p className="text-xs sm:text-sm text-gray-600">Rom 201, 2. etasje</p>
                     </div>
                   </div>
-
-                  {/* <div className="flex items-center gap-3">
-                    <Clock className="w-5 h-5 text-orange-500" />
-                    <div>
-                      <h4 className="font-medium text-gray-900">Åpningstider</h4>
-                      <p className="text-sm text-gray-600">Mandag-fredag: 08:00 - 16:00</p>
-                    </div>
-                  </div> */}
                 </CardContent>
               </Card>
             </div>
