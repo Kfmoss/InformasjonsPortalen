@@ -195,6 +195,15 @@ function App() {
     
   ]
 
+  const meetings = [
+    {
+      dato: "16 September",
+      icon: teknologiIcon,
+      tema: 'Vi skal presentere appen for deling av informasjon og viktige datoer.',
+      topics: ['Oppdeling av elever og klasser', 'læringsmål for VG1-IM', 'Erasmus-prosjekt: Malaga, Spania - Januar 2026']
+    }
+  ]
+
   const subjects = [
     {
       title: 'Produksjon og historiefortelling',
@@ -339,9 +348,48 @@ function App() {
           </div>
         </div>
       </section>
+      
+
+      <section id="ViktigInfo" className="py-8 sm:py-12 lg:py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8 sm:mb-12">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2 sm:mb-4">Dato for Foreldremøter 2025-2026</h2>
+            <p className="text-sm sm:text-base lg:text-lg text-gray-600"></p>
+          </div>
+
+          <div className="grid grid-cols-1 gap-4 sm:gap-6 lg:gap-8">
+            {meetings.map((subject, index) => (
+              <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
+                <CardHeader className="pb-3 sm:pb-4">
+                  <div className="flex items-center gap-3 sm:gap-4 mb-3 sm:mb-4">
+                    <img src={subject.icon} alt={subject.title} className="w-10 h-10 sm:w-12 sm:h-12" />
+                    <CardTitle className="text-lg sm:text-xl">{subject.dato}</CardTitle>
+                  </div>
+                  <CardDescription className="text-sm sm:text-base text-gray-600 leading-relaxed">
+                    {subject.description}
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="pt-0">
+                  <h4 className="font-semibold text-gray-900 mb-2 sm:mb-3 text-sm sm:text-base">Aktuelle saker</h4>
+                  <ul className="space-y-1 sm:space-y-2">
+                    {subject.topics.map((topic, topicIndex) => (
+                      <li key={topicIndex} className="flex items-start gap-2">
+                        <div className="w-2 h-2 bg-blue-500 rounded-full mt-1.5 sm:mt-2 flex-shrink-0"></div>
+                        <span className="text-xs sm:text-sm text-gray-700">{topic}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+
+
+      </section>
 
       {/* Subjects Section */}
-      <section id="fag" className="py-8 sm:py-12 lg:py-16 bg-gray-50">
+      {/* <section id="fag" className="py-8 sm:py-12 lg:py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8 sm:mb-12">
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2 sm:mb-4">Fagintroduksjoner</h2>
@@ -375,7 +423,7 @@ function App() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Contact Section */}
       <section id="kontakt" className="py-8 sm:py-12 lg:py-16">
@@ -413,7 +461,7 @@ function App() {
               <Card>
                 <CardContent className="p-4 sm:p-6 space-y-3 sm:space-y-4">
                   <div className="flex items-start sm:items-center gap-3">
-                    <Phone className="w-4 h-4 sm:w-5 sm:h-5 text-green-500 mt-1 sm:mt-0 flex-shrink-0" />
+                    <Mail className="w-4 h-4 sm:w-5 sm:h-5 text-green-500 mt-1 sm:mt-0 flex-shrink-0" />
                     <div>
                       <h4 className="font-medium text-gray-900 text-sm sm:text-base">Avdelingsleder</h4>
                       <p className="text-xs sm:text-sm text-gray-600">Kyrre Brekke Haakaas</p>
