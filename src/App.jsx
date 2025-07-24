@@ -11,6 +11,8 @@ import teknologiIcon from './assets/icon_teknologiforstaelse.png'
 import konseptIcon from './assets/icon_konseptutvikling_programmering.png'
 import yrkesfagligIcon from './assets/icon_yrkesfaglig_fordypning.png'
 import logo1 from './assets/Logo_IM.jpg'
+import mainpic from './assets/hand_using_phone.png'
+import mainpic1 from './assets/three_people_centered.png'
 
 function App() {
   const [currentMonth, setCurrentMonth] = useState(0) // 0 = August, 1 = September, etc.
@@ -289,7 +291,8 @@ function App() {
               </Button>
             </div>
             <div className="flex justify-center order-first lg:order-last">
-              <img src={heroImage} alt="Studenter som jobber med teknologi" className="w-full max-w-sm sm:max-w-md lg:max-w-full h-auto rounded-lg shadow-lg" />
+              {/* <img src={heroImage} alt="Studenter som jobber med teknologi" className="w-full max-w-sm sm:max-w-md lg:max-w-full h-auto rounded-lg shadow-lg" /> */}
+              <img src={mainpic1} alt="" className="w-full max-w-sm sm:max-w-md lg:max-w-full h-auto rounded-lg shadow-lg" />
             </div>
           </div>
         </div>
@@ -353,7 +356,7 @@ function App() {
       <section id="ViktigInfo" className="py-8 sm:py-12 lg:py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8 sm:mb-12">
-            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2 sm:mb-4">Dato for Foreldremøter 2025-2026</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2 sm:mb-4">Dato for foreldremøter 2025-2026</h2>
             <p className="text-sm sm:text-base lg:text-lg text-gray-600"></p>
           </div>
 
