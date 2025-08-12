@@ -285,6 +285,7 @@ function App() {
               </h2>
               <p className="text-base sm:text-lg lg:text-xl mb-6 sm:mb-8 text-blue-100">
                 Her finner du alt du trenger å vite om prosjekter, foreldremøter, kontaktinformasjon og mye mer.
+                Denne appen er fortsatt under utvikling. 
               </p>
               {/*<Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white w-full sm:w-auto">
                 Utforsk prosjektene
