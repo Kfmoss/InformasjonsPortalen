@@ -286,9 +286,10 @@ function App() {
               <p className="text-base sm:text-lg lg:text-xl mb-6 sm:mb-8 text-blue-100">
                 Her finner du alt du trenger å vite om prosjekter, foreldremøter, kontaktinformasjon og mye mer.
               </p>
-              <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white w-full sm:w-auto">
+              {/*<Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white w-full sm:w-auto">
                 Utforsk prosjektene
-              </Button>
+              </Button> */}
+
             </div>
             <div className="flex justify-center order-first lg:order-last">
               {/* <img src={heroImage} alt="Studenter som jobber med teknologi" className="w-full max-w-sm sm:max-w-md lg:max-w-full h-auto rounded-lg shadow-lg" /> */}
