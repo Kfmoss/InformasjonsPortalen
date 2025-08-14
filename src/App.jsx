@@ -239,7 +239,7 @@ function App() {
     { role: 'Kontaktlærer A-klasse', name: 'Edgardo Daniel Vidal Salinas', email: 'edgardos@bfk.no' },
     { role: 'Kontaktlærer B-klasse / Teamleder IM VG1', name: 'Yngve Reime Erlandsen', email: 'yngveer@bfk.no' },
     { role: 'Kontaktlærer C-klasse', name: 'Ole Christian Slyngstad', email: 'olesl@bfk.no' },
-    { role: 'Studieveileder', name: 'Levi Malm Pettersen', email: 'levip@bfk.no' }
+    { role: 'Rågiver', name: 'Levi Malm Pettersen', email: 'levip@bfk.no' }
   ]
 
   const nextMonth = () => {
@@ -264,6 +264,7 @@ function App() {
               <a href="#kalender" className="text-gray-700 hover:text-blue-600 transition-colors">Kalender</a>
               <a href="#fag" className="text-gray-700 hover:text-blue-600 transition-colors">Fag</a>
               <a href="#kontakt" className="text-gray-700 hover:text-blue-600 transition-colors">Kontakt</a>
+              <a href="#timeplan" className="text-gray-700 hover:text-blue-600 transition-colors">Timeplan</a>
             </nav>
             {/* Mobile menu button */}
             <div className="md:hidden">
@@ -278,7 +279,7 @@ function App() {
       </header>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-600 to-blue-800 text-white py-8 sm:py-12 lg:py-16">
+      <section className="bg-gradient-to-br from-gray-600 to-gray-800 text-white py-8 sm:py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-center">
             <div className="text-center lg:text-left">
@@ -295,13 +296,21 @@ function App() {
 
             </div>
             <div className="flex justify-center order-first lg:order-last">
-              {/* <img src={heroImage} alt="Studenter som jobber med teknologi" className="w-full max-w-sm sm:max-w-md lg:max-w-full h-auto rounded-lg shadow-lg" /> */}
-              {/* <img src={mainpic1} alt="" className="w-full max-w-sm sm:max-w-md lg:max-w-full h-auto rounded-lg shadow-lg" /> */}
               <img src={logo1} alt="" className="w-full max-w-sm sm:max-w-md lg:max-w-full h-auto rounded-lg shadow-lg" />
               
             </div>
           </div>
         </div>
+      </section>
+
+      <section id="timeplan">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-8 sm:mb-12">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2 sm:mb-4">Timeplan</h2>
+          </div>
+
+        </div>
+
       </section>
 
       {/* Calendar Section */}
@@ -397,42 +406,6 @@ function App() {
 
       </section>
 
-      {/* Subjects Section */}
-      {/* <section id="fag" className="py-8 sm:py-12 lg:py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8 sm:mb-12">
-            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2 sm:mb-4">Fagintroduksjoner</h2>
-            <p className="text-sm sm:text-base lg:text-lg text-gray-600">Lær mer om de fire fagene du vil jobbe med på VG1</p>
-          </div>
-
-          <div className="grid grid-cols-1 gap-4 sm:gap-6 lg:gap-8">
-            {subjects.map((subject, index) => (
-              <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
-                <CardHeader className="pb-3 sm:pb-4">
-                  <div className="flex items-center gap-3 sm:gap-4 mb-3 sm:mb-4">
-                    <img src={subject.icon} alt={subject.title} className="w-10 h-10 sm:w-12 sm:h-12" />
-                    <CardTitle className="text-lg sm:text-xl">{subject.title}</CardTitle>
-                  </div>
-                  <CardDescription className="text-sm sm:text-base text-gray-600 leading-relaxed">
-                    {subject.description}
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="pt-0">
-                  <h4 className="font-semibold text-gray-900 mb-2 sm:mb-3 text-sm sm:text-base">Hovedtemaer:</h4>
-                  <ul className="space-y-1 sm:space-y-2">
-                    {subject.topics.map((topic, topicIndex) => (
-                      <li key={topicIndex} className="flex items-start gap-2">
-                        <div className="w-2 h-2 bg-blue-500 rounded-full mt-1.5 sm:mt-2 flex-shrink-0"></div>
-                        <span className="text-xs sm:text-sm text-gray-700">{topic}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section> */}
 
       {/* Contact Section */}
       <section id="kontakt" className="py-8 sm:py-12 lg:py-16">
@@ -481,8 +454,8 @@ function App() {
                   <div className="flex items-start sm:items-center gap-3">
                     <MapPin className="w-4 h-4 sm:w-5 sm:h-5 text-red-500 mt-1 sm:mt-0 flex-shrink-0" />
                     <div>
-                      <h4 className="font-medium text-gray-900 text-sm sm:text-base">Kontoret</h4>
-                      <p className="text-xs sm:text-sm text-gray-600">Rom 201, 2. etasje</p>
+                      <h4 className="font-medium text-gray-900 text-sm sm:text-base">Kontor</h4>
+                      <p className="text-xs sm:text-sm text-gray-600">Rom 201, 2. etasje - Bygg G</p>
                     </div>
                   </div>
                 </CardContent>
