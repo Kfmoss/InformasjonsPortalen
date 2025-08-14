@@ -14,6 +14,8 @@ import logo1 from './assets/Logo_IM.jpg'
 import mainpic from './assets/hand_using_phone.png'
 import mainpic1 from './assets/three_people_centered.png'
 
+
+
 function App() {
   const [currentMonth, setCurrentMonth] = useState(0) // 0 = August, 1 = September, etc.
 
@@ -294,7 +296,9 @@ function App() {
             </div>
             <div className="flex justify-center order-first lg:order-last">
               {/* <img src={heroImage} alt="Studenter som jobber med teknologi" className="w-full max-w-sm sm:max-w-md lg:max-w-full h-auto rounded-lg shadow-lg" /> */}
-              <img src={mainpic1} alt="" className="w-full max-w-sm sm:max-w-md lg:max-w-full h-auto rounded-lg shadow-lg" />
+              {/* <img src={mainpic1} alt="" className="w-full max-w-sm sm:max-w-md lg:max-w-full h-auto rounded-lg shadow-lg" /> */}
+              <img src={logo1} alt="" className="w-full max-w-sm sm:max-w-md lg:max-w-full h-auto rounded-lg shadow-lg" />
+              
             </div>
           </div>
         </div>
