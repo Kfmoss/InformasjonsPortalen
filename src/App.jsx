@@ -258,7 +258,7 @@ function App() {
           <div className="flex justify-between items-center py-2 sm:py-4">
             <div className="flex items-center gap-2 sm:gap-4">
               {/* <img src={logo1} alt="Åssiden VGS Logo" className="h-16 w-auto" /> */}
-              <h1 className="text-lg sm:text-xl lg:text-2xl font-bold text-blue-600">InformasjonsPortalen VG1</h1>
+              <h1 className="text-lg sm:text-xl lg:text-2xl text-black-600">InformasjonsPortalen VG1 IM</h1>
             </div>
             <nav className="hidden md:flex space-x-8">
               <a href="#kalender" className="text-gray-700 hover:text-blue-600 transition-colors">Kalender</a>
