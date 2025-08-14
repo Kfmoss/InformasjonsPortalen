@@ -5,14 +5,13 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import './App.css'
 
 // Import images
-import heroImage from './assets/hero_illustration.png'
 import produksjonIcon from './assets/icon_produksjon_historiefortelling.png'
 import teknologiIcon from './assets/icon_teknologiforstaelse.png'
 import konseptIcon from './assets/icon_konseptutvikling_programmering.png'
 import yrkesfagligIcon from './assets/icon_yrkesfaglig_fordypning.png'
 import logo1 from './assets/Logo_IM.jpg'
-import mainpic from './assets/hand_using_phone.png'
 import mainpic1 from './assets/three_people_centered.png'
+import bfklogo from './assets/buskerud.jpg'
 
 
 
@@ -201,10 +200,10 @@ function App() {
 
   const meetings = [
     {
-      dato: "16 September",
+      dato: "Publiseres snart",
       icon: teknologiIcon,
       tema: 'Vi skal presentere appen for deling av informasjon og viktige datoer.',
-      topics: ['Oppdeling av elever og klasser', 'læringsmål for VG1-IM', 'Erasmus-prosjekt: Malaga, Spania - Januar 2026']
+      topics: ['Oppdeling av elever og klasser']
     }
   ]
 
@@ -258,7 +257,8 @@ function App() {
           <div className="flex justify-between items-center py-2 sm:py-4">
             <div className="flex items-center gap-2 sm:gap-4">
               {/* <img src={logo1} alt="Åssiden VGS Logo" className="h-16 w-auto" /> */}
-              <h1 className="text-lg sm:text-xl lg:text-2xl text-black-600">InformasjonsPortalen VG1 IM</h1>
+              {/* <h1 className="text-lg sm:text-xl lg:text-2xl text-black-600">InformasjonsPortalen VG1 IM</h1> */}
+              <img src={bfklogo} alt="Buskerud fylkeskommune logo" class="h-12 w-auto" />
             </div>
             <nav className="hidden md:flex space-x-8">
               <a href="#kalender" className="text-gray-700 hover:text-blue-600 transition-colors">Kalender</a>
