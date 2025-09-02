@@ -24,17 +24,17 @@ function App() {
       projects: [
         {
           week: 'Uke 34',
-          title: 'Prosjekt 1',
+          title: 'Oppstart',
           subject: 'Alle fag',
           method: 'Individuelt arbeid med veiledning',
-          assessment: 'Godkjent/Ikke godkjent'
+          assessment: 'Ingen vurdering'
         },
         {
           week: 'Uke 35',
-          title: 'prosjekt 2',
+          title: 'Oppstart',
           subject: 'Alle fag',
           method: 'Individuelt arbeid med veiledning',
-          assessment: 'Godkjent/Ikke godkjent'
+          assessment: 'Ingen vurdering'
         }
 
         
@@ -45,38 +45,38 @@ function App() {
       projects: [
         {
           week: 'Uke 36',
-          title: 'Prosjekt 3',
-          subject: 'Produksjon og historiefortelling',
+          title: 'HTML',
+          subject: 'Konseptutvikling og programmering',
           method: 'Gruppearbeid (2-3 elever)',
-          assessment: 'Karakter 1-6'
+          assessment: 'Godkjent/Ikke godkjent'
         },
         {
           week: 'Uke 37',
-          title: 'Prosjekt 4',
-          subject: 'Teknologiforståelse',
-          method: 'Individuell rapport',
-          assessment: 'Karakter 1-6'
+          title: 'Grafisk design - Photoshop',
+          subject: 'Produksjon oh historiefortelling',
+          method: 'Individuelt, gruppearbeid',
+          assessment: 'Godkjent/Ikke godkjent'
         },
         {
           week: 'Uke 38',
-          title: 'Prosjekt 5',
+          title: 'AI - kunsting intelligens',
           subject: 'Teknologiforståelse',
-          method: 'Individuell rapport',
-          assessment: 'Karakter 1-6'
+          method: 'Individuell, gruppearbeid',
+          assessment: 'Godkjent/Ikke god godkjent'
         },
         {
           week: 'Uke 39',
-          title: 'Prosjekt 6',
+          title: 'Video 1',
           subject: 'Teknologiforståelse',
-          method: 'Individuell rapport',
-          assessment: 'Karakter 1-6'
+          method: 'Gruppearbeid',
+          assessment: 'Godkjent/Ikke godkjent'
         },
         {
           week: 'Uke 40',
-          title: 'Prosjekt 7',
-          subject: 'Teknologiforståelse',
-          method: 'Individuell rapport',
-          assessment: 'Karakter 1-6'
+          title: 'Høstferie',
+          subject: '-',
+          method: '-',
+          assessment: '-'
         }
       ]
     },
@@ -85,114 +85,114 @@ function App() {
       projects: [
         {
           week: 'Uke 41',
-          title: 'App-konsept - "Løsning for ungdom"',
+          title: 'CSS1 - webutvikling',
           subject: 'Konseptutvikling og programmering',
-          method: 'Gruppeprosjekt med prototype',
-          assessment: 'Karakter 1-6'
-        },
-        {
-          week: 'Uke 43',
-          title: 'Fordypningsprosjekt - Valgfritt tema',
-          subject: 'Yrkesfaglig fordypning',
-          method: 'Individuelt eller gruppe',
+          method: 'Gruppearbeid',
           assessment: 'Godkjent/Ikke godkjent'
         }
+        // {
+        //   week: 'Uke 43',
+        //   title: 'Fordypningsprosjekt - Valgfritt tema',
+        //   subject: 'Yrkesfaglig fordypning',
+        //   method: 'Individuelt eller gruppe',
+        //   assessment: 'Godkjent/Ikke godkjent'
+        // }
       ]
     },
     {
       name: 'November 2025',
       projects: [
-        {
-          week: 'Uke 45',
-          title: 'Tverrfaglig prosjekt - "Digital kampanje"',
-          subject: 'Alle fag',
-          method: 'Store grupper (4-5 elever)',
-          assessment: 'Karakter 1-6'
-        }
+        // {
+        //   week: 'Uke 45',
+        //   title: 'Tverrfaglig prosjekt - "Digital kampanje"',
+        //   subject: 'Alle fag',
+        //   method: 'Store grupper (4-5 elever)',
+        //   assessment: 'Karakter 1-6'
+        // }
       ]
     },
     {
       name: 'Desember 2025',
       projects: [
-        {
-          week: 'Uke 48',
-          title: 'Eksamen og porteføljeinnlevering',
-          subject: 'Alle fag',
-          method: 'Individuell presentasjon',
-          assessment: 'Karakter 1-6'
-        }
+        // {
+        //   week: 'Uke 48',
+        //   title: 'Eksamen og porteføljeinnlevering',
+        //   subject: 'Alle fag',
+        //   method: 'Individuell presentasjon',
+        //   assessment: 'Karakter 1-6'
+        // }
       ]
     },
     {
       name: 'Januar 2026',
       projects: [
-        {
-          week: 'Uke 48',
-          title: 'Eksamen og porteføljeinnlevering',
-          subject: 'Alle fag',
-          method: 'Individuell presentasjon',
-          assessment: 'Karakter 1-6'
-        }
+        // {
+        //   week: 'Uke 48',
+        //   title: 'Eksamen og porteføljeinnlevering',
+        //   subject: 'Alle fag',
+        //   method: 'Individuell presentasjon',
+        //   assessment: 'Karakter 1-6'
+        // }
       ]
     },
     {
       name: 'Februar 2026',
       projects: [
-        {
-          week: 'Uke 48',
-          title: 'Eksamen og porteføljeinnlevering',
-          subject: 'Alle fag',
-          method: 'Individuell presentasjon',
-          assessment: 'Karakter 1-6'
-        }
+        // {
+        //   week: 'Uke 48',
+        //   title: 'Eksamen og porteføljeinnlevering',
+        //   subject: 'Alle fag',
+        //   method: 'Individuell presentasjon',
+        //   assessment: 'Karakter 1-6'
+        // }
       ]
     },
     {
       name: 'Mars 2026',
       projects: [
-        {
-          week: 'Uke 48',
-          title: 'Eksamen og porteføljeinnlevering',
-          subject: 'Alle fag',
-          method: 'Individuell presentasjon',
-          assessment: 'Karakter 1-6'
-        }
+        // {
+        //   week: 'Uke 48',
+        //   title: 'Eksamen og porteføljeinnlevering',
+        //   subject: 'Alle fag',
+        //   method: 'Individuell presentasjon',
+        //   assessment: 'Karakter 1-6'
+        // }
       ]
     },
     {
       name: 'April 2026',
       projects: [
-        {
-          week: 'Uke 48',
-          title: 'Eksamen og porteføljeinnlevering',
-          subject: 'Alle fag',
-          method: 'Individuell presentasjon',
-          assessment: 'Karakter 1-6'
-        }
+        // {
+        //   week: 'Uke 48',
+        //   title: 'Eksamen og porteføljeinnlevering',
+        //   subject: 'Alle fag',
+        //   method: 'Individuell presentasjon',
+        //   assessment: 'Karakter 1-6'
+        // }
       ]
     },
     {
       name: 'Mai 2026',
       projects: [
-        {
-          week: 'Uke 48',
-          title: 'Eksamen og porteføljeinnlevering',
-          subject: 'Alle fag',
-          method: 'Individuell presentasjon',
-          assessment: 'Karakter 1-6'
-        }
+        // {
+        //   week: 'Uke 48',
+        //   title: 'Eksamen og porteføljeinnlevering',
+        //   subject: 'Alle fag',
+        //   method: 'Individuell presentasjon',
+        //   assessment: 'Karakter 1-6'
+        // }
       ]
     },
     {
-      name: 'Juni 2025',
+      name: 'Juni 2026',
       projects: [
-        {
-          week: 'Uke 48',
-          title: 'Eksamen og porteføljeinnlevering',
-          subject: 'Alle fag',
-          method: 'Individuell presentasjon',
-          assessment: 'Karakter 1-6'
-        }
+        // {
+        //   week: 'Uke 48',
+        //   title: 'Eksamen og porteføljeinnlevering',
+        //   subject: 'Alle fag',
+        //   method: 'Individuell presentasjon',
+        //   assessment: 'Karakter 1-6'
+        // }
       ]
     }
     
@@ -200,10 +200,10 @@ function App() {
 
   const meetings = [
     {
-      dato: "Publiseres snart",
+      dato: "23.September kl 1800 - 1900",
       icon: teknologiIcon,
       tema: 'Vi skal presentere appen for deling av informasjon og viktige datoer.',
-      topics: ['Oppdeling av elever og klasser']
+      topics: ['Generell informasjon om skolen']
     }
   ]
 
@@ -306,7 +306,7 @@ function App() {
       <section id="timeplan">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="text-center mb-8 sm:mb-12">
-            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2 sm:mb-4">Timeplan</h2>
+           
           </div>
 
         </div>
