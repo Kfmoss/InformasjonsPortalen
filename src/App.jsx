@@ -89,14 +89,21 @@ function App() {
           subject: 'Konseptutvikling og programmering',
           method: 'Gruppearbeid',
           assessment: 'Godkjent/Ikke godkjent'
+        },
+        {
+          week: 'Uke 42',
+          title: 'Linær historiefortelling',
+          subject: 'Produksjon og historiefortelling',
+          method: 'Individuelt',
+          assessment: 'Karakter'
+        },
+        {
+          week:'Uke 43',
+          title: 'CSS2',
+          Subject:'KOnseptutvikling og programmering',
+          method: 'individuelt/gruppearbeid',
+          assessment: 'Godkjent/Ikke godkjent',
         }
-        // {
-        //   week: 'Uke 43',
-        //   title: 'Fordypningsprosjekt - Valgfritt tema',
-        //   subject: 'Yrkesfaglig fordypning',
-        //   method: 'Individuelt eller gruppe',
-        //   assessment: 'Godkjent/Ikke godkjent'
-        // }
       ]
     },
     {
