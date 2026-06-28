@@ -208,10 +208,9 @@ function App() {
 
   const meetings = [
     {
-      // dato: "23.September kl 1800 - 1900",
-      // icon: teknologiIcon,
-      // tema: 'Vi skal presentere appen for deling av informasjon og viktige datoer.',
-      // topics: ['Generell informasjon om skolen']
+      dato: 'Mer informasjon kommer',
+      description: 'Foreldremøtedatoer legges inn når de er klare.',
+      topics: []
     }
   ]
 
@@ -398,7 +397,7 @@ function App() {
                 <CardContent className="pt-0">
                   <h4 className="font-semibold text-gray-900 mb-2 sm:mb-3 text-sm sm:text-base">Aktuelle saker</h4>
                   <ul className="space-y-1 sm:space-y-2">
-                    {subject.topics.map((topic, topicIndex) => (
+                    {(subject.topics || []).map((topic, topicIndex) => (
                       <li key={topicIndex} className="flex items-start gap-2">
                         <div className="w-2 h-2 bg-blue-500 rounded-full mt-1.5 sm:mt-2 flex-shrink-0"></div>
                         <span className="text-xs sm:text-sm text-gray-700">{topic}</span>
