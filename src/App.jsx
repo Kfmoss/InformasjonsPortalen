@@ -207,10 +207,10 @@ function App() {
 
   const meetings = [
     {
-      dato: "23.September kl 1800 - 1900",
-      icon: teknologiIcon,
-      tema: 'Vi skal presentere appen for deling av informasjon og viktige datoer.',
-      topics: ['Generell informasjon om skolen']
+      // dato: "23.September kl 1800 - 1900",
+      // icon: teknologiIcon,
+      // tema: 'Vi skal presentere appen for deling av informasjon og viktige datoer.',
+      // topics: ['Generell informasjon om skolen']
     }
   ]
 
