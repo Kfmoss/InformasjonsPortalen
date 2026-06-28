@@ -266,7 +266,7 @@ function App() {
             <div className="flex items-center gap-2 sm:gap-4">
               {/* <img src={logo1} alt="Åssiden VGS Logo" className="h-16 w-auto" /> */}
               {/* <h1 className="text-lg sm:text-xl lg:text-2xl text-black-600">InformasjonsPortalen VG1 IM</h1> */}
-              <img src={bfklogo} alt="Buskerud fylkeskommune logo" class="h-12 w-auto" />
+              <img src={bfklogo} alt="Buskerud fylkeskommune logo" className="h-12 w-auto" />
             </div>
             <nav className="hidden md:flex space-x-8">
               <a href="#kalender" className="text-gray-700 hover:text-blue-600 transition-colors">Kalender</a>
@@ -312,8 +312,8 @@ function App() {
       </section>
 
       <section id="timeplan">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="text-center mb-8 sm:mb-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8 sm:mb-12">
            
           </div>
 
