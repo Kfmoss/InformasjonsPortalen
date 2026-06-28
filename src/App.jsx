@@ -11,7 +11,8 @@ import konseptIcon from './assets/icon_konseptutvikling_programmering.png'
 import yrkesfagligIcon from './assets/icon_yrkesfaglig_fordypning.png'
 import logo1 from './assets/Logo_IM.jpg'
 import mainpic1 from './assets/three_people_centered.png'
-import bfklogo from './assets/buskerud.jpg'
+// import bfklogo from './assets/buskerud.jpg'
+import bfklogo from './assets/Logo_IM.jpg'
 
 
 
